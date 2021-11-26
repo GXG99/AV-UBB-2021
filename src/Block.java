@@ -28,4 +28,8 @@ public class Block {
         }
         return string;
     }
+
+    public void setMatrix(double[][] matrix) {
+        this.matrix = matrix;
+    }
 }

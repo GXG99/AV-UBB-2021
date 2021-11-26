@@ -23,6 +23,7 @@ public class Image {
         this.width = image.width;
         this.height = image.height;
         this.author = image.author;
+        this.title = image.title;
         this.r = new int[image.height][image.width];
         this.g = new int[image.height][image.width];
         this.b = new int[image.height][image.width];
@@ -33,6 +34,7 @@ public class Image {
 
     public Image(String fileName) {
         this.fileName = fileName;
+        System.out.printf("Reading image %s%n", fileName);
         readImage();
         convertRGBtoYUV();
     }
