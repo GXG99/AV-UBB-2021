@@ -1,6 +1,7 @@
 public class Block {
     private int size;
     private double[][] matrix;
+    private int[][] integerMatrix;
     private String colorType;
 
     Block(int size, String colorType) {
@@ -31,5 +32,13 @@ public class Block {
 
     public void setMatrix(double[][] matrix) {
         this.matrix = matrix;
+    }
+
+    public int[][] getIntegerMatrix() {
+        return integerMatrix;
+    }
+
+    public void setIntegerMatrix(int[][] integerMatrix) {
+        this.integerMatrix = integerMatrix;
     }
 }

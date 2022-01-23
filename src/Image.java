@@ -85,7 +85,7 @@ public class Image {
             System.out.println(String.format("Image of size height: %s, width: %s final size %s", height, width, height * width * 3));
             BufferedWriter writer = new BufferedWriter(new FileWriter("output/" + outputFileName + ".ppm"));
             writer.write("P3\n");
-            writer.write(author + "\n");
+            writer.write("#" + author + "\n");
             writer.write(height + " "  + width + "\n");
             writer.write("255\n");
             writer.write("255\n");
